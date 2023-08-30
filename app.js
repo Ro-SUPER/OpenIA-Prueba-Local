@@ -1,4 +1,4 @@
-const API_KEY = "yourapikey";
+const API_KEY = "agregar tu api acá";
 
 async function getCompletion(prompt) {
   const response = await fetch(`https://api.openai.com/v1/completions`, {
@@ -8,10 +8,10 @@ async function getCompletion(prompt) {
       Authorization: `Bearer ${API_KEY}`,
     },
     body: JSON.stringify({
-      model: "text-davinci-003",
+      model: "text-davinci-003", 
       // prompt: "give a random example of programming language",
-      prompt: prompt,
-      max_tokens: 20,
+      prompt: "dame un ejemplo aleatorio de un lenguaje de programación",
+      max_tokens: 50,
     }),
   });
 
